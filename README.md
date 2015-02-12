@@ -56,7 +56,7 @@ Directory `ansible-wordpress-microservices/dbserver/`
 
 #### Run db container
 
-   make run_dbserver_container_mysql
+    make run_dbserver_container_mysql
 
 ### Container web (Apache2)
 
@@ -64,7 +64,7 @@ Directory `ansible-wordpress-microservices/webserver`
 
 #### Create web image from Dockerfile
 
-   make webserver_container
+    make webserver_container
 
 #### Run web container
 
