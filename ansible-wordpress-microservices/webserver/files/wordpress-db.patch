@@ -1,0 +1,19 @@
+--- wp-config.php       2015-01-26 22:13:46.000000000 +0000
++++ wp-config.new       2015-01-26 23:06:49.469560491 +0000
+@@ -21,7 +21,7 @@
+ /** MySQL database password */
+ define('DB_PASSWORD', 'awesome_wp_pass');
+ /** MySQL hostname */
+-define('DB_HOST', 'localhost');
++define('DB_HOST', $_ENV['DB_PORT_3306_TCP_ADDR']);
+ /** Database Charset to use in creating database tables. */
+ define('DB_CHARSET', 'utf8');
+ /** The Database Collate type. Don't change this if in doubt. */
+@@ -64,4 +64,4 @@
+ if ( !defined('ABSPATH') )
+        define('ABSPATH', dirname(__FILE__) . '/');
+ /** Sets up WordPress vars and included files. */
+-require_once(ABSPATH . 'wp-settings.php');
+\ No newline at end of file
++require_once(ABSPATH . 'wp-settings.php');
+

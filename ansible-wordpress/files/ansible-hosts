@@ -1,0 +1,11 @@
+[monitoring]
+localhost
+
+[webservers]
+localhost
+
+[dbservers]
+localhost
+
+[cacheservers]
+localhost

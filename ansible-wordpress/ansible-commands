@@ -1,0 +1,3 @@
+
+Command to run in the container
+ansible-playbook wordpress.yml -c local
