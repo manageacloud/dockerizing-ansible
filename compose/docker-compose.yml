@@ -1,0 +1,12 @@
+web:
+  image: ansible-ms-webserver
+  command: /usr/sbin/apache2ctl -D FOREGROUND 
+  links:
+   - db
+  ports:
+   - "1800:80"
+db:
+  image: ansible-ms-dbserver
+  command: /usr/sbin/mysqld
+
+
